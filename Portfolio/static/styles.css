@@ -1,0 +1,14 @@
+body{
+    margin : 0px;
+    padding : 0px ;
+}
+.the_me{
+    display :  block;
+    height: 150px;
+}
+ul{
+    display : inline;
+}
+footer{
+    display: inline;
+}
