@@ -25,21 +25,19 @@ main{
     margin-left: 100px;
 }
 .nav-bar:hover{
-    background-color: rgb(230, 230, 230);
-    opacity : 0.5;
+    background-color: rgb(0, 0, 0);
+    color : white ;
+    font-weight: bold;
+    border : 5px solid black;
+
 }
-.button:hover{
-    
-    border : 10px solid black;
-    
-    
-}
-.presentation-1{
+
+.presentation-1, .presentation-about{
     font-size: xx-large;
     font-weight: bold;
 
 }
-.presentation-2{
+.presentation-2, .presentation-about2{
     font-size: medium;
     padding : 10px;
 
@@ -54,11 +52,13 @@ main{
     color : white;
     font-weight: bold;
 }
+.button:hover{ 
+    border : 10px solid black;
+}
 footer{
     position: fixed;
     bottom:0;
     width: 100%;
-
 }
 .footer{  
     width:50%;
@@ -68,4 +68,15 @@ footer{
     font-size: x-large;
     font-weight: bold;
     
+}
+#about{
+    position: absolute;
+    margin-top : 500px;
+    width : 80%;
+    height: 500px;
+    background-color: azure;
+}
+.the_me2{
+    float : left;
+    height: 500px;
 }
