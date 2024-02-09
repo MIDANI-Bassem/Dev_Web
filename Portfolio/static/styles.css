@@ -8,13 +8,26 @@ body{
 .the_me{
     float : right;
     height: 880px;
+    
 } 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+    
 .navbar{
-    position: sticky;
-    top : 0 ;
+    position:sticky ;
     margin-top: 20px ;
     background-color :rgb(255, 255, 255) ;
     width : 100%;
+}
+.navbar a#active {
+    background-color: #000000;
+    color: white;
+}
+@media screen and (max-width = 850px) {
+    
 }
 .nav-bar{
     padding: 20px;
@@ -23,9 +36,11 @@ body{
     text-decoration: none;
     color : black;
 }
-main{
+.intro{
+    position: absolute;
     margin-top: 250px;
-    margin-left: 100px;
+    margin-left: 250px;
+    
 }
 .nav-bar:hover{
     background-color: rgb(0, 0, 0);
@@ -35,6 +50,7 @@ main{
 }
 
 .presentation-1, .presentation-about{
+    margin-top: 80px;
     font-size: xx-large;
     font-weight: bold;
 
@@ -43,6 +59,14 @@ main{
     font-size: medium;
     padding : 5px;
     font-weight: bold;
+
+}
+.mail{
+    font-size: medium;
+    padding : 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
 
 }
 .button{
@@ -61,17 +85,28 @@ main{
 }
 #about{
     position: absolute;
-    margin-top : 500px;
-    width : 80%;
+    margin-top : 200px;
+    margin-left: 100px;
+    width: 80%;
     height: 800px;
-    
+}
+.the_me2{
+    float : left;
+    height: 800px;
+}
+.section-title{
+    margin-top: 1100px ;
+    width: 100%;
+    height: 50px;
+    border : 1px solid black;
 }
 #education{
     position: absolute;
     display: inline;
-    margin-top : 1200px;
-    width : 90%;
-    height: 800px;
+    margin-top : 50px;
+    margin-left: 200px;
+    width : 80%;
+    height: 1000px;
     background-color: azure;    
 }
 .ed-logos{
@@ -83,7 +118,12 @@ main{
     margin-top: 100px;
     margin-right: 125px;
     font-weight: bold;
-    
+}
+#link-esat:hover{
+    font-size: large;
+}
+.mail:hover{
+    font-size: large;
 }
 .logo-e{
     margin-top: 50px;
@@ -105,6 +145,13 @@ main{
 .hd-description{
     margin-top: 200px;
 }
+.hd-description a{
+    text-decoration: none;
+    color: #000000;
+}
+.hd-description a:hover{
+    font-size: large;
+}
 
 #projects{
     position: absolute;
@@ -112,10 +159,6 @@ main{
     width : 90%;
     height: 1000px;
     background-color: azure;    
-}
-.the_me2{
-    float : left;
-    height: 500px;
 }
 
 .footer{  

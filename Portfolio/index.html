@@ -8,22 +8,28 @@
 </head>
 <body>
     <header>
-        <div class ="navbar">
-            <a class = "nav-bar" name = "home" href = "#home">Home</a>         
+        <div class ="navbar" id="myNavbar">
+            <a class = "nav-bar" name = "home" href = "#home" id="active">Home</a>         
             <a class = "nav-bar" name = "about" href="#about">About</a>         
-            <a class = "nav-bar" name = "education" href = "#education">Education</a>
+            <a class = "nav-bar" name = "education" href = "#education2">Education</a>
             <a class = "nav-bar" name = "projects" href = "#projects">Projects and Skills</a>
             <a class = "nav-bar" name = "experiences" href = "#experiences">Experiences</a>
-            <a class = "nav-bar" name = "contact" href = "#contact">Contact</a>
-        </div>
-        <img class = "the_me" src="/Portfolio/static/portfolio.JPG" alt="moi" title="moi"> 
+            <a class = "nav-bar" name = "contact" href = "mailto:lemidanibassem@gmail.com">Contact</a>
+        </div>   
     </header>
     <main>
-        <p class="presentation-1">Hello !</p>
-        <p class="presentation-1">I Am Midani Bassem</p>
-        <p class="presentation-2">I'm a junior Web Developer. My passion is to create websites, applications and many more..</p>
-        <a class="button" name = "projects" href = "#projects">SEE PORTFOLIO</a>
-        <div id="about">
+        <div class="clearfix">
+            <div>
+                <img class ="the_me" src="/Portfolio/static/portfolio.JPG" alt="moi" title="moi">
+            </div>
+            <div class = "intro">
+                <p class="presentation-1">Hello !</p>
+                <p class="presentation-1">I Am Midani Bassem</p>
+                <p class="presentation-2">I'm a junior Web Developer. My passion is to create websites, applications and many more..</p>
+                <a class="button" name = "projects" href = "#projects">SEE PORTFOLIO</a>
+            </div>
+        </div>
+        <div id="about" class="clearfix">
             <img class = "the_me2" src="/Portfolio/static/portfolio2.JPG" alt="moi" title="moi"> 
             <p class="presentation-about">Hello, I Am Midani Bassem</p>
             <p class="presentation-about2">Passionate geomatics engineer,
@@ -34,8 +40,12 @@
             <p class="presentation-about2">Age  : 29</p>
             <p class="presentation-about2">Adresse   : 10, Square des rochellets, 44100 Nantes.</p>
             <p class="presentation-about2">Phone number   : (+33)602320202</p>
-            <p class="presentation-about2">Email   : lemidanibassem@gmail.com</p>
+            <a class="link-esat" style="text-decoration: none;color: black;" href = "mailto:lemidanibassem@gmail.com"><p class="mail">Email   : lemidanibassem@gmail.com</p></a>
             <a class="button" href="/Portfolio/static/CV.pdf" download>Download CV</a>
+            <a class="button" name = "projects" href = "#projects" style="margin-top: 100px;">SEE PORTFOLIO</a> 
+        </div>
+        <div class="section-title" id="education2">
+            <p style="text-align: center; font-size: large;font-weight: bold;">My cursus</p>
         </div>
         <div id="education">
             <div class="ed-logos">
@@ -44,14 +54,14 @@
             </div>
             <div class="ed-description">
                 <div>
-                    <p>Ecole Supérieure de l’Aéronautique et des Technologies de Tunis (ESAT)</p>
+                    <a id="link-esat" style="text-decoration: none;color: black;" href = "https://www.esat.ens.tn/fr/cycle-ingenieur-en-geomatique-et-topographie.php" target="_blank"><p>Ecole Supérieure de l’Aéronautique et des Technologies de Tunis (ESAT)</p></a>
                     <p>Cycle Préparatoire Maths/Physique</p>
                 </div>
                 <div class="hd-description">
-                    <p>CS50's Introduction to Computer Science</p>
-                    <p>CS50's Introduction to Programming with Python</p>
-                    <p>CS50's Introduction to Databases with SQL</p>
-                    <p>CS50's Web Programming with Python and JavaScript</p>
+                    <a href = "https://pll.harvard.edu/course/cs50-introduction-computer-science" target="_blank"><p>CS50's Introduction to Computer Science</p></a>
+                    <a href = "https://www.harvardonline.harvard.edu/course/cs50s-introduction-programming-python" target="_blank"><p>CS50's Introduction to Programming with Python</p></a>
+                    <a href = "https://pll.harvard.edu/course/cs50s-introduction-databases-sql" target="_blank"><p>CS50's Introduction to Databases with SQL</p></a>
+                    <a href = "https://pll.harvard.edu/course/cs50s-web-programming-python-and-javascript/2023-05" target="_blank"><p>CS50's Web Programming with Python and JavaScript</p></a>
                 </div>
             </div>
         </div>
@@ -62,8 +72,18 @@
     </main> 
     <footer>
         <div class = "footer">
-            <p>Designed by Midani Bassem</p>
+            <p>© Designed by Midani Bassem</p>
         </div>
     </footer>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myNavbar");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+        </script>
 </body>
 </html>
