@@ -77,18 +77,19 @@ main{
 .ed-logos{
     float: left;
     width:40%;
-    border: 1px solid black;
     height : 600px;
 }
 .ed-description{  
-    margin-top: 50px;
-    text-align: center;
+    margin-top: 100px;
+    margin-right: 125px;
     font-weight: bold;
     
 }
 .logo-e{
+    margin-top: 50px;
     position: absolute;
     height: 150px;
+    margin-left: 10px;
 }
 .logo-e:hover{ 
     height: 160px;
@@ -98,8 +99,11 @@ main{
 }
 .logo-h{
     position: absolute;
-    margin-top: 225px;
+    margin-top: 280px;
     height: 300px;
+}
+.hd-description{
+    margin-top: 200px;
 }
 
 #projects{
