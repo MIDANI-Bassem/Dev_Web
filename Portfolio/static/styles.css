@@ -95,10 +95,10 @@ body{
     height: 800px;
 }
 .section-title{
-    margin-top: 1100px ;
+    margin-top: 1110px ;
     width: 100%;
-    height: 50px;
-    border : 1px solid black;
+    height: 100px;
+    font-size: xx-large;
 }
 #education{
     position: absolute;
@@ -106,8 +106,11 @@ body{
     margin-top : 50px;
     margin-left: 200px;
     width : 80%;
-    height: 1000px;
-    background-color: azure;    
+    height: 700px;
+}
+#education:hover{
+    background-color: aliceblue;
+
 }
 .ed-logos{
     float: left;
