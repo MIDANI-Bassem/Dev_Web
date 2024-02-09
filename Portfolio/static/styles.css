@@ -57,7 +57,6 @@ body{
 .intro:hover{
     background-color:aliceblue;
 }
-
 #about{
     position: absolute;
     margin-top : 200px;
@@ -114,6 +113,7 @@ body{
 }
 
 .section-title{
+    position: relative;
     margin-top: 1150px ;
     width: 100%;
     height: 100px;
@@ -121,7 +121,6 @@ body{
 }
 #education{
     position: absolute;
-    display: inline;
     margin-top : 50px;
     margin-left: 200px;
     width : 80%;
@@ -129,17 +128,12 @@ body{
 }
 #education:hover{
     background-color: aliceblue;
-
 }
 .ed-logos{
     float: left;
     width:40%;
-    height : 600px;
-}
-.ed-description{  
-    margin-top: 100px;
-    margin-right: 125px;
-    font-weight: bold;
+    height :550px;
+    margin-left: 25px;
 }
 #link-esat:hover{
     font-size: large;
@@ -164,8 +158,19 @@ body{
     margin-top: 280px;
     height: 300px;
 }
+.esat-description{
+    position: absolute;
+    width : 800px;
+    margin-top: 80px;
+    margin-left: 700px;
+    font-weight: bold;
+}
 .hd-description{
-    margin-top: 200px;
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 700px;
+    font-weight: bold;
+    
 }
 .hd-description a{
     text-decoration: none;
@@ -173,6 +178,10 @@ body{
 }
 .hd-description a:hover{
     font-size: large;
+}
+#button-certif{
+    position :relative;
+    margin-left: 600px;
 }
 .portfolio-title{
     margin-top: 850px ;
@@ -244,18 +253,143 @@ body{
     font-weight: bold;
     background-color: azure; 
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:900px){
+    .navbar{
+        margin-top: 0px;
+    }
+    .nav-bar{
+        display: block;
+        width :40%;       
+    }
     .the_me{
-        float:right;
         height: 350px;
     } 
+
+    .the_me_container{
+        margin-top: 0;
+        float:right;
+        height : 350px;
+     
+    }
     .the_me2{
         display: none;
     } 
     .intro{
         display: none;
+    }
+    #about{
+        position: absolute;
+        margin-left : 0px;
+        margin-top: 0px;
+        height: 700px;
+    }
+    .text_about_container{
+        position: absolute;
+        margin-left: 0px;
+        margin-top: 0px;
+        height: 700px;
+        width:90%;
+    }
+    .section-title{
+        position: relative;
+        margin-top: 200px ;
+        border: 1px solid black; 
+
+    }
+    #education{
+        position: absolute;
+        margin-top : 50px;
+        margin-left : 0px;
+        width : 100%;
+        height: 700px;
+    }
+    .ed-logos{
+        float: left;
+        width:40%;
+        height :550px;
+        margin-left: 50px;
+    }
+   
+    .esat-description{
+        position: absolute;
+        width : 100%;
+        margin-top: 80px;
+        margin-left: 0px;
+        font-weight: bold;
+    }
+    .hd-description{
+        position: absolute;
+        margin-top: 650px;
+        margin-left: 0px;
+        font-weight: bold;
         
     }
+  
+    #button-certif{
+        position :relative;
+        margin-left: 600px;
+    }
+    #section1, #section2, #section3, #section4{
+        width : 100%;
+        border: 1px solid black;
+        height : 1000px
+    }
+    .column1{
+        float : none;
+        display : block;
+        width: 100%;
+        height: 250px;
+        border: 1px solid rgb(90, 29, 29);
+    }
+    .column2{
+        float : none;
+        display : block;
+        width: 100%;
+        border: 1px solid rgb(34, 17, 110);
+    }
+    .column3{
+        float : none;
+        display : block;
+        width: 100%;
+        height: 250px;
+        border: 1px solid rgb(29, 136, 82);
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .presentation-1, .presentation-about{
         margin-top: 0px;
         font-size: large;
@@ -267,13 +401,7 @@ body{
         padding : 3px;
         font-weight: bold;
     }
-    #about{
-        
-        margin-top: 0px;
-        margin-left: 10px;
-        width: 100%;
-        height: 400px;
-    }
+  
     .button{
         position : absolute;
         padding :10px;
