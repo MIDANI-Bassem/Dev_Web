@@ -59,17 +59,6 @@ main{
 .button:hover{ 
     border : 10px solid black;
 }
-
-.footer{  
-    position : relative;
-    margin-top: 3500px;
-    width:100%;
-    text-align: center;
-    color: rgb(14, 13, 13);
-    font-size: x-large;
-    font-weight: bold;
-    background-color: azure; 
-}
 #about{
     position: absolute;
     margin-top : 500px;
@@ -79,11 +68,40 @@ main{
 }
 #education{
     position: absolute;
+    display: inline;
     margin-top : 1200px;
     width : 90%;
-    height: 1000px;
+    height: 800px;
     background-color: azure;    
 }
+.ed-logos{
+    float: left;
+    width:40%;
+    border: 1px solid black;
+    height : 600px;
+}
+.ed-description{  
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+.logo-e{
+    position: absolute;
+    height: 150px;
+}
+.logo-e:hover{ 
+    height: 160px;
+}
+.logo-h:hover{ 
+    height: 310px;
+}
+.logo-h{
+    position: absolute;
+    margin-top: 225px;
+    height: 300px;
+}
+
 #projects{
     position: absolute;
     margin-top : 2300px;
@@ -94,4 +112,15 @@ main{
 .the_me2{
     float : left;
     height: 500px;
+}
+
+.footer{  
+    position : relative;
+    margin-top: 3500px;
+    width:100%;
+    text-align: center;
+    color: rgb(14, 13, 13);
+    font-size: x-large;
+    font-weight: bold;
+    background-color: azure; 
 }
