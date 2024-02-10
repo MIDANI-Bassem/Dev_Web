@@ -11,7 +11,11 @@ body{
     clear: both;
     display: table;
 }
-    
+.material-symbols-outlined{
+    font-size: 50px !important;
+    color: #000000 !important;
+    display: none !important;
+}
 .navbar{
     position: relative;
     padding-top: 20px;
@@ -282,6 +286,8 @@ body{
     margin-left: 350px;
     background-color: rgb(0, 0, 0);
     color : white;
+    height: 80px; 
+    padding: 30px;
 }
 #sticky:hover{
     background-color: white;
@@ -290,6 +296,12 @@ body{
     
 }
 @media screen and (max-width:600px){
+    .material-symbols-outlined{
+        display:block !important;
+    }
+    .material-symbols-outlined:hover{
+        display:block !important;
+    }
     .navbar{
         margin-top: 0px;
     }
@@ -420,7 +432,8 @@ body{
         height: 80px;
         background-color: rgb(0, 0, 0);
         color : white;
-        font-size: small;      
+        font-size: small; 
+        padding: 20px;     
     }
     #sticky:hover{
         background-color: white;
