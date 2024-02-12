@@ -14,7 +14,7 @@
         {
             const nav = document.getElementsByClassName("nav-bar");
             for (let i = 0; i < nav.length; i++) {
-                nav[i].style.display = "block";          
+                nav[i].style.display = "block";       
         }}
     </script>
 <body>
@@ -65,8 +65,8 @@
         <div class="section-title" id="education2">
             <p style="text-align: center;font-weight: bold;">EDUCATION</p>
         </div>
-        <div id="education" class="clearfix">
-            <div id ="esat">
+        <div id="education">
+            <div id ="esat" class="clearfix">
                 <div class="esat-logo">        
                     <a href = "https://www.esat.ens.tn/fr/cycle-ingenieur-en-geomatique-et-topographie.php" target="_blank"><img class = "logo-e" src="/Portfolio/static/logo-esat.png" alt="moi" title="moi"></a>
                 </div>
@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div id="harvard" class="ed-description"> 
-                <div><a href = "https://pll.harvard.edu/course/cs50-introduction-computer-science" target="_blank"><img class ="logo-h" src="/Portfolio/static/logo-harvard.png" alt="moi" title="moi"></a></div>
+                <div id ="logo-h-container"><a href = "https://pll.harvard.edu/course/cs50-introduction-computer-science" target="_blank"><img class ="logo-h" src="/Portfolio/static/logo-harvard.png" alt="moi" title="moi"></a></div>
                 <div class="hd-description">
                     <a href = "https://pll.harvard.edu/course/cs50-introduction-computer-science" target="_blank"><p>CS50's Introduction to Computer Science</p></a>
                     <a href = "https://www.harvardonline.harvard.edu/course/cs50s-introduction-programming-python" target="_blank"><p>CS50's Introduction to Programming with Python</p></a>
@@ -84,8 +84,8 @@
                     <a href = "https://pll.harvard.edu/course/cs50s-web-programming-python-and-javascript/2023-05" target="_blank"><p>CS50's Web Programming with Python and JavaScript</p></a>
                 </div>
             </div>
-            <div style="margin-top: 600px;">
-                <a id = "button-certif" class="button" name = "projects" href = "/Portfolio/static/_MidaniBassem_Certifications.zip" download>Download Certifications</a>
+            <div id ="button-certif">
+                <a class="button" name = "projects" href = "/Portfolio/static/_MidaniBassem_Certifications.zip" download>Download Certifications</a>
             </div>
         </div>
         <div class="portfolio-title" id="projects">
@@ -114,34 +114,40 @@
                 </div>               
                           
         </div>
-        
-        <div class="experiences-title" id="experiences">
+        <div class="section-title" id="experience-title">
             <p style="text-align: center;font-weight: bold;">EXPERIENCES</p>
         </div>
-        <div id="education" class="clearfix">
-            <div class="ed-logos">
-                <a href = "https://pll.harvard.edu/course/cs50-introduction-computer-science" target="_blank"><img class = "logo-h" src="/Portfolio/static/logo-harvard.png" alt="moi" title="moi"></a>
-                <a href = "https://www.esat.ens.tn/fr/cycle-ingenieur-en-geomatique-et-topographie.php" target="_blank"><img class = "logo-e" src="/Portfolio/static/logo-esat.png" alt="moi" title="moi"></a>
-            </div>
-            <div class="ed-description">
-                <div class="esat-description">
-                    <p>Cycle Préparatoire Maths/Physique</p>
-                    <p>Cycle Préparatoire Maths/Physique</p>
+        <div id="experiences">
+            <div id ="esat" class="clearfix">
+                <div id="logo-airgeo">        
+                    <a href = "http://www.airegeo.fr/" target="_blank"><img class = "img-airgeo" src="/Portfolio/static/airgeo.png" alt="moi" title="moi"></a>
                 </div>
+                <div class="airgeo-description">
+                    <p id="link-esat" style="color: black;">AIR&GEO</p>
+                    <p >Drafting of various Plans (Elevation Plan - Architecture Plan - Topographic or Mass Plan...)<br>
+                        Interior and exterior surveys with static and dynamic 3D scanners<br>
+                        Processing, Calculation, and drawing on point clouds.</p>
+                </div>
+            </div>
+            <div id="harvard" class="ed-description"> 
+                <div id ="logo-h-container"><a href = "https://www.ageis-ge.fr/#" target="_blank"><img id ="logo-ageis" src="/Portfolio/static/Logo-AGEIS-RVB.png" alt="moi" title="moi"></a></div>
                 <div class="hd-description">
-                    <p>CS50's Introduction to Computer Science</p>
-                    <p>CS50's Introduction to Programming with Python</p>                 
+                    <p id="link-esat" style="color: black;">AGEIS</p>
+                    <p>Monitoring of 3D projects (quotes, invoices)<br>
+                        Organization, scheduling of interventions<br>
+                        Customer follow-up<br>
+                        Static and dynamic 3D scan surveys<br>
+                        3D data processing<br>
+                        Preparation of plans at 1/50th and 1/100th scale</p>
                 </div>
             </div>
         </div>
-           
-        
+        <div id="space"></div>
     </main> 
     <footer>
         <div class = "footer">
             <div class="box1"><p style="padding: 10px; color: white;">© Designed by Midani Bassem</p></div>
-            <div class="box2"><a id= "sticky" style="display: block; text-decoration: none; " href = "mailto:lemidanibassem@gmail.com">CONTACT ME</a></div>
-            
+            <div class="box2"><a id= "sticky" style="display: block; text-decoration: none; " href = "mailto:lemidanibassem@gmail.com">CONTACT ME</a></div>         
         </div>
     </footer>
 </body>
