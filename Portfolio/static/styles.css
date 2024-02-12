@@ -298,10 +298,9 @@ body{
 @media screen and (max-width:600px){
     .material-symbols-outlined{
         display:block !important;
+        margin-left: 25px;
     }
-    .material-symbols-outlined:hover{
-        display:block !important;
-    }
+
     .navbar{
         margin-top: 0px;
     }
@@ -311,7 +310,7 @@ body{
         
     }
     .the_me{
-        height: 350px;
+        height: 400px;
     } 
 
     .the_me_container{
@@ -329,7 +328,7 @@ body{
     #about{
         position: absolute;
         margin-left : 0px;
-        margin-top: 0px;
+        margin-top: 60px;
         height: 700px;
     }
     .text_about_container{
