@@ -132,8 +132,6 @@ body{
 #esat{
     width: 100%;
     height : 250px;
-    
- 
 }
 #esat:hover{
     background-color: aliceblue;
@@ -418,41 +416,61 @@ body{
         font-size: smaller;
     }
     .section-title{
-        margin-top: 900px ;
+        margin-top: 800px ;
         height: 20px;
         font-size:x-large;
+    }
+    #esat{
+        margin-top: 20px;
     }
     .logo-e{
         position: absolute;
         height: 50px;
         margin-left: 180px;
-        margin-top: 50px;
+        margin-top: 30px;
     }  
-    .logo-e:hover{
-        height: 60px;
-        
-    }  
-    .logo-h{    
-        height: 180px;
-        margin-left: 100px;
-        margin-top: 0px;
-    }
-    .logo-h:hover{
-        height: 190px;
-    }  
-    .esat-description{
+    .esat-description{ 
         float: none;
         height: 250px;
         font-weight: bold;
         padding-top: 100px;
         width: 100%;
         text-align: center;
-        border : 1px solid black;
+        font-size: smaller;
+    }
+    .logo-e:hover{
+        height: 60px;
+    } 
+    #harvard{
+        margin-top: 0px;
+        height: 300px;
+    } 
+    .logo-h{    
+        height: 180px;
+        margin-left: 100px;
+        margin-top: -20px;
+    }
+    .logo-h:hover{
+        height: 190px;
+    }  
+    #logo-h-container{
+        position: absolute;
+        height : 10px;
+        width : 100%;
     }
     .ed-description{
         margin-top: 90px;
         margin-left: 0px;
         font-size: smaller;
+    }
+    .hd-description{
+        float: none;
+        width : 100%;
+        text-align: center;
+        padding-top: 150px;
+    }
+    .hd-description a:hover{
+        font-size: medium;
     }
     .portfolio-title{
         margin-top: 750px ;
