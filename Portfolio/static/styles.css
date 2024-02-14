@@ -276,7 +276,7 @@ body{
     margin-left : 130px;
     margin-top: 20px;
 }
-#logo-ageis{
+#img-ageis{
     height: 180px;
     margin: 0px 150px;
     
@@ -285,7 +285,7 @@ body{
     height : 220px;
 
 }
-#logo-ageis:hover{
+#img-ageis:hover{
     height: 200px;
 
 }
@@ -310,10 +310,11 @@ body{
 .ageis-description{
     float:right;
     width : 60% ;
-    height: 250px;
+    height: 0px;
     padding-top: 50px;
     font-weight: bold;
     text-align : center;
+    border : 1px solid black;
 
 }
 #ageis{
@@ -324,6 +325,7 @@ body{
     background-color: aliceblue;
     border-bottom: 1px solid black;
 }
+
 #space{
     height: 80px;
 }
@@ -566,10 +568,16 @@ body{
         margin-left : 100px;
         margin-top: 0px;
     }
+    #img-ageis{
+        height: 100px;
+        margin-top: 0px;
+        margin-left: 0px;
+        
+    }
     #logo-ageis{
         height: 100px;
         margin-top: 0px;
-        margin-left: 120px;
+        margin-left: 0px;
         
     }
     .img-airgeo:hover{
