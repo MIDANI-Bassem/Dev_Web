@@ -299,6 +299,14 @@ body{
     width: 60%;
     text-align: center;
 }
+#airgeo{
+    width: 100%;
+    height : 250px;
+}
+#airgeo:hover{
+    background-color: aliceblue;
+    border-bottom: 1px solid black;
+}
 .ageis-description{
     float:right;
     width : 60% ;
@@ -312,11 +320,15 @@ body{
     width: 100%;
     height : 250px;
 }
+#ageis:hover{
+    background-color: aliceblue;
+    border-bottom: 1px solid black;
+}
 #space{
     height: 80px;
 }
 .footer{  
-    position : fixed;
+    position :fixed;
     bottom : 0;
     width:100%;
     height: 80px;  
@@ -362,6 +374,7 @@ body{
         text-decoration: none;
     }
 
+
     .navbar{
         margin-top: 0px;
     }
@@ -385,6 +398,8 @@ body{
     } 
     .intro{
         display: none;
+        margin-left: 0px;
+        width: 100%;
     }
     #about{
         position: absolute;
@@ -426,8 +441,8 @@ body{
     .logo-e{
         position: absolute;
         height: 50px;
-        margin-left: 180px;
-        margin-top: 30px;
+        margin:0px;
+        
     }  
     .esat-description{ 
         float: none;
@@ -447,8 +462,7 @@ body{
     } 
     .logo-h{    
         height: 180px;
-        margin-left: 100px;
-        margin-top: -20px;
+        margin:0px;
     }
     .logo-h:hover{
         height: 190px;
@@ -516,7 +530,7 @@ body{
         border : 1px solid black;
         border-radius :50px;
         width : 130px;
-        margin-left:50px;
+        margin-left:30%;
         height: 80px;
         background-color: rgb(0, 0, 0);
         color : white;
