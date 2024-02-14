@@ -272,10 +272,14 @@ body{
     margin: auto;
     padding-top: 1rem;
 }
+
 .img-portfolio2{
     margin: auto;
     padding: 1rem;
     width : 50%;
+}
+.img-portfolio2:hover{
+    width : 55%;
 }
 
 
