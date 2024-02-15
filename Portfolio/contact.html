@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Portfolio/static/styles.css">
+    <link rel="shortcut icon" type = "image/svg" href="/Portfolio/static/user-tie-solid.svg">
+    <title>Contact me</title>
+</head>
+<script>
+    function shrink(){
+        const width_input = document.getElementsByClassName("form");
+        for(let i = 0 ; i < width_input.length ; i++){
+            width_input[i].style.width = "100%";
+        }
+    }
+</script>
+<body>
+    <form>
+        <div id = "container">
+            <label id ="label" class = "form" for="firstname">First name :</label>
+            <input onclick="shrink();" class = "form" type="text" placeholder="First name" name="firstname">
+            <label id ="label"class = "form" for="lastname">Last name :</label>
+            <input onclick="shrink();"class = "form" type="text" placeholder="Last name" name="lastname">
+            <label id ="label"class = "form" for="subject">Subject :</label>
+            <input onclick="shrink();"class = "form" type="text" placeholder="Subject" name="subject">
+            <label id ="label"class = "form" for="feedback">feedback :</label>
+            <textarea style="width:80%; height:200px;"id = "feedback" class = "form" type="textarea"  name="feedback"></textarea>
+            <input id="button-submit" style="padding:10px;"  type="submit" name="submit">
+            
+        </div>
+        
+    </form>
+</body>
+</html>

@@ -230,8 +230,7 @@ body{
 }
 
 #section1, #section2, #section3, #section4{
-    width : 100%;
-    border: 1px solid black;
+    width : 100%; 
     height : 500px
 }
 .column1, .column2, .column3{
@@ -242,7 +241,6 @@ body{
 .column1{
     float: left;
     width: 25%;
-    border: 1px solid rgb(90, 29, 29);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,7 +248,6 @@ body{
 .column2{
     float: inline-start;
     width: 60%;
-    border: 1px solid rgb(34, 17, 110);
     text-align: left;
     padding-top: 10rem;
     padding-left: 1rem;
@@ -261,7 +258,6 @@ body{
 .column3{
     float: right;
     width: 15%;
-    border: 1px solid rgb(29, 136, 82);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -281,45 +277,6 @@ body{
 .img-portfolio2:hover{
     width : 55%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #experience-title{
     margin-top: 2200px ;
     width: 100%;
@@ -439,6 +396,58 @@ body{
     font-size: larger;
     
 }
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 1px solid black;
+}
+
+#container{
+    padding: 2rem;
+    border : 2px solid black;
+    width:40%;
+    height: fit-content;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(131, 129, 129);
+}
+#container:hover{
+    border : 4px solid black;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 5px 5px 5px rgb(131, 129, 129);
+    
+}
+.form{
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 50%;
+}
+#button-submit{
+    margin-top: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: larger;
+    font-weight: bold;
+}
+#button-submit:hover{
+    border: 3px solid black;
+    background-color: rgb(0, 0, 0);
+    color : white;
+    font-weight:bold;
+    font-size: larger;
+    font-weight: bold;
+    
+}
+#label{
+    display: block;
+}
+
 @media screen and (max-width:1340px){
     .material-symbols-outlined{
         display:block !important;
@@ -577,7 +586,6 @@ body{
     }
     #section1, #section2, #section3, #section4{
         width : 100%;
-        border: 1px solid black;
         height : 1000px
     }
     .column1{
@@ -585,20 +593,20 @@ body{
         display : block;
         width: 100%;
         height: 250px;
-        border: 1px solid rgb(90, 29, 29);
+        
     }
     .column2{
         float : none;
         display : block;
         width: 100%;
-        border: 1px solid rgb(34, 17, 110);
+        
     }
     .column3{
         float : none;
         display : block;
         width: 100%;
         height: 250px;
-        border: 1px solid rgb(29, 136, 82);
+        
     }
     #experience-title{
         margin-top: 4150px ;
@@ -678,4 +686,10 @@ body{
         color: #000000;
         font-size: medium;
     }  
+    #container{
+        width:80%;
+    }
+    .form{
+        width: 70%;
+    }
 }
