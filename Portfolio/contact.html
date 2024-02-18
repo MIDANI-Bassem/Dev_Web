@@ -8,11 +8,17 @@
     <title>Contact me</title>
 </head>
 <script>
-    function shrink(){
+
+    let timeout;
+    function shrink() {
+        timeout = setTimeout(myFunction, 250);
+        }
+    function myFunction(){
         const width_input = document.getElementsByClassName("form");
         for(let i = 0 ; i < width_input.length ; i++){
             width_input[i].style.width = "100%";
         }
+        
     }
 </script>
 <body>
